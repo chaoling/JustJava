@@ -16,6 +16,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends ActionBarActivity {
     private int mQuantity = 0;
+    private int mUnitPrice = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +29,9 @@ public class MainActivity extends ActionBarActivity {
      */
     public void submitOrder(View view) {
         //int numberOfCoffees = 2;
-        int unitPrice = 5;
+        //int unitPrice = 5;
         display(mQuantity);
-        displayPrice(mQuantity * unitPrice);
+        displayPrice(mQuantity * mUnitPrice);
     }
 
     /**
