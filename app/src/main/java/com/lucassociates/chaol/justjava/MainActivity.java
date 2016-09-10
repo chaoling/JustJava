@@ -64,6 +64,8 @@ public class MainActivity extends ActionBarActivity {
      */
     private void displayPrice(int price) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText("$" + price);
+        String orderSummary = " Total: $" + price;
+        orderSummary = orderSummary + "\n Thank You!";
+        priceTextView.setText(orderSummary);
     }
 }
